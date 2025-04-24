@@ -3,6 +3,7 @@ from nltk.util import ngrams
 from preprocess import get_tokenized_sentences
 
 class NgramCounter:
-    def __init__(self, file_name : str) -> None:
-        self.text_file
-        self.count = 
+    def __init__(self, text_file : str) -> None:
+        self.sentence_generator = get_tokenized_sentences(text_file)
+        self.count()
+
