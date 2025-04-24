@@ -23,3 +23,7 @@ class NgramCounter:
                     if ngram_position == 0:
                         self.start_counts[ngram] = self.start_counts.get(ngram, 0) + 1
                     self.counts[ngram] = self.counts.get(ngram, 0) + 1                
+
+class NgramModel:
+    def __init__(self, train_counter: NgramCounter) -> None:
+        
